@@ -299,9 +299,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DoubleAndAddFiveTest - 2019.06.04 at 13h 04m 50s.xml">
-      <configuration name="DoubleAndAddFiveTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MultiplyThreeTest - 2019.06.04 at 13h 05m 29s.xml">
       <configuration name="MultiplyThreeTest" configurationId="JUnit" />
     </history-entry>
@@ -329,11 +326,15 @@
     <history-entry file="AllKatasTest - 2019.06.04 at 13h 10m 26s.xml">
       <configuration name="AllKatasTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AllKatasTest - 2019.06.04 at 16h 48m 46s.xml">
+      <configuration name="AllKatasTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -342,7 +343,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32872504" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

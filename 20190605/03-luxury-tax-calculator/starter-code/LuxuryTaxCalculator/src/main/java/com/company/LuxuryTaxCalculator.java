@@ -27,7 +27,7 @@ public class LuxuryTaxCalculator {
             int tax = (total - 40000000) * 18/100;
             System.out.println(tax);
         } else {
-            System.out.println("");
+            System.out.println("No tax applies");
         }
 
 
