@@ -19,7 +19,7 @@ public class HiLo {
         System.out.println("OK, " + name + ", here are the rules:");
         System.out.println("Guess a number between 1-100");
         int number = myscanner.nextInt();
-//        System.out.println(random);
+
         boolean exactNumber = false;
         int guesses = 0;
         while (!exactNumber) {

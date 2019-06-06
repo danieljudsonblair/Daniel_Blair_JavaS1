@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e939ca-4a57-414d-abac-66ca25158f48" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../FizzBuzz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FizzBuzz/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HiLo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HiLo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HiLo/src/main/java/com/company/HiLo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HiLo/src/main/java/com/company/HiLo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LoanCalculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LoanCalculator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrimeFinder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimeFinder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoanCalculator/src/main/java/com/company/LoanCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LoanCalculator/src/main/java/com/company/LoanCalculator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,7 +28,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/HowManyTimesToSeven.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="680">
               <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -147,9 +145,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="219" y="0" width="1151" height="775" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25389552" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25389552" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -159,7 +156,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32866043" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -183,7 +180,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/HowManyTimesToSeven.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="680">
           <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
