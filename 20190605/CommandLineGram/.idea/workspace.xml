@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a8f795a-b367-48a2-9b08-f81e811817ae" name="Default Changelist" comment="" />
+    <list default="true" id="1a8f795a-b367-48a2-9b08-f81e811817ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +30,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CommandLineGram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
+            <state relative-caret-position="501">
               <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
             </state>
           </provider>
@@ -55,7 +58,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -157,7 +160,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../03-luxury-tax-calculator/starter-code/LuxuryTaxCalculator" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
@@ -172,7 +176,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CommandLineGram">
+  <component name="RunManager" selected="JUnit.CommandLineGramTest">
     <configuration name="CommandLineGram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.CommandLineGram" />
       <module name="CommandLineGram" />
@@ -203,8 +207,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CommandLineGram" />
         <item itemvalue="JUnit.CommandLineGramTest" />
+        <item itemvalue="Application.CommandLineGram" />
       </list>
     </recent_temporary>
   </component>
@@ -231,11 +235,15 @@
     <history-entry file="CommandLineGramTest - 2019.06.04 at 16h 30m 39s.xml">
       <configuration name="CommandLineGramTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CommandLineGramTest - 2019.06.04 at 21h 05m 10s.xml">
+      <configuration name="CommandLineGramTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -286,7 +294,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CommandLineGram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
+        <state relative-caret-position="501">
           <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
         </state>
       </provider>

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f95da5a7-be96-4e19-a935-1e482f537e30" name="Default Changelist" comment="" />
+    <list default="true" id="f95da5a7-be96-4e19-a935-1e482f537e30" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../CommandLineGram/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CommandLineGram/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CommandLineGram/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CommandLineGram/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LuxuryTaxCalculator/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LuxuryTaxCalculator/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LuxuryTaxCalculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LuxuryTaxCalculator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +25,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/RectPavingCompany.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state relative-caret-position="365">
               <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
             </state>
           </provider>
@@ -27,7 +34,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -55,6 +62,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,11 +122,11 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../02-registration-form/starter-code/CommandLineGram" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
@@ -133,7 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RectPavingCompany">
+  <component name="RunManager" selected="JUnit.RectPavingCompanyTest">
     <configuration name="RectPavingCompany" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.RectPavingCompany" />
       <module name="RectPavingCompany" />
@@ -164,8 +172,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RectPavingCompany" />
         <item itemvalue="JUnit.RectPavingCompanyTest" />
+        <item itemvalue="Application.RectPavingCompany" />
       </list>
     </recent_temporary>
   </component>
@@ -195,11 +203,14 @@
     <history-entry file="RectPavingCompanyTest - 2019.06.04 at 16h 29m 25s.xml">
       <configuration name="RectPavingCompanyTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RectPavingCompanyTest - 2019.06.04 at 21h 07m 16s.xml">
+      <configuration name="RectPavingCompanyTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -230,7 +241,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/RectPavingCompany.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="365">
           <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
         </state>
       </provider>
