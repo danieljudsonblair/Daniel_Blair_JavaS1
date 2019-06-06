@@ -12,19 +12,19 @@ public class HowManyTimesToSeven {
 
         int rolls = Integer.parseInt(myScanner.nextLine());
 
-        int max = 6;
-        int min = 1;
-        int two = 0;
-        int three = 0;
-        int four = 0;
-        int five = 0;
-        int six = 0;
-        int seven = 0;
-        int eight = 0;
-        int nine = 0;
-        int ten = 0;
-        int eleven = 0;
-        int twelve = 0;
+        short max = 6;
+        short min = 1;
+        short two = 0;
+        short three = 0;
+        short four = 0;
+        short five = 0;
+        short six = 0;
+        short seven = 0;
+        short eight = 0;
+        short nine = 0;
+        short ten = 0;
+        short eleven = 0;
+        short twelve = 0;
         boolean sevenRoll = false;
 
 
@@ -49,6 +49,7 @@ public class HowManyTimesToSeven {
                     break;
                 case 7:
                     if (sevenRoll == false) {
+                        System.out.println("==============================");
                         System.out.println("It took you " + i + " rolls to get 7");
                         sevenRoll = true;
                     }
@@ -72,6 +73,7 @@ public class HowManyTimesToSeven {
             }
         }
         System.out.println("You rolled " + rolls + " times");
+        System.out.println("==============================");
         System.out.println("You rolled 2 " + two + " times");
         System.out.println("You rolled 3 " + three + " times");
         System.out.println("You rolled 4 " + four + " times");
@@ -83,6 +85,6 @@ public class HowManyTimesToSeven {
         System.out.println("You rolled 10 " + ten + " times");
         System.out.println("You rolled 11 " + eleven + " times");
         System.out.println("You rolled 12 " + twelve + " times");
-
+        System.out.println("==============================");
     }
 }
