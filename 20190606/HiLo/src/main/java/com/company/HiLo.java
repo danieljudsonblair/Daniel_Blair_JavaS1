@@ -10,8 +10,8 @@ public class HiLo {
     public static void main(String[] args) {
         Scanner myscanner = new Scanner(System.in);
         Random rand = new Random();
-        int max = 100;
-        int min = 1;
+        byte max = 100;      // max <= 127 with byte type
+        byte min = 1;        // max
         int random = rand.nextInt((max - min) + 1) + min;
         System.out.println("Welcome to Hi-Low!");
         System.out.println("Please Enter your name:");
@@ -21,7 +21,7 @@ public class HiLo {
         int number = myscanner.nextInt();
 
         boolean exactNumber = false;
-        int guesses = 0;
+        byte guesses = 0;
         while (!exactNumber) {
             if (number < random) {
                 System.out.println("Too Low!");

@@ -5,9 +5,9 @@ public class PrimeFinder {
         Scanner myscanner = new Scanner(System.in);
         System.out.println("Please Enter a number");
         int num = myscanner.nextInt();
-        int counter = 0;
-        for (int i = 2; i <=num; i++) {
-            for (int j = 1;  j<= i; j++) {
+        byte counter = 0;
+        for (short i = 2; i <=num; i++) {
+            for (short j = 1;  j<= i; j++) {
                 if (i % j == 0) {
                     counter++;
                 }
