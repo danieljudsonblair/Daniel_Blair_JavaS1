@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e939ca-4a57-414d-abac-66ca25158f48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../FizzBuzz/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HiLo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LoanCalculator/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrimeFinder/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../U1M1L3Katas/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FizzBuzz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FizzBuzz/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HiLo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HiLo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HiLo/src/main/java/com/company/HiLo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HiLo/src/main/java/com/company/HiLo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LoanCalculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LoanCalculator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PrimeFinder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimeFinder/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/.idea/workspace.xml" afterDir="false" />

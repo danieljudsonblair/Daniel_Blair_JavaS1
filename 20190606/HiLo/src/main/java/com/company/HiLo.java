@@ -10,7 +10,9 @@ public class HiLo {
     public static void main(String[] args) {
         Scanner myscanner = new Scanner(System.in);
         Random rand = new Random();
-        int random = rand.nextInt(99)+1;
+        int max = 100;
+        int min = 1;
+        int random = rand.nextInt((max - min) + 1) + min;
         System.out.println("Welcome to Hi-Low!");
         System.out.println("Please Enter your name:");
         String name= myscanner.nextLine();
