@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.Scanner;
-import java.text.DecimalFormat;
+
 
 
 public class LoanCalculator {
