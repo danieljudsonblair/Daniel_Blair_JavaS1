@@ -1,5 +1,7 @@
 package com.company;
+
 import java.util.Scanner;
+
 public class PrimeFinder {
     public static void main(String[] args) {
         Scanner myscanner = new Scanner(System.in);
