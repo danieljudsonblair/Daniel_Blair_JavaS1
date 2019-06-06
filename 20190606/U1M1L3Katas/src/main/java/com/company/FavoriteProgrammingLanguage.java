@@ -6,8 +6,10 @@ public class FavoriteProgrammingLanguage {
 
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
+
         System.out.println("What's your favorite programming language?");
         String fav = myScanner.nextLine();
+
         boolean isFavorite = false;
 
         while (!isFavorite) {

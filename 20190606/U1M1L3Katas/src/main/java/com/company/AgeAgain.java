@@ -6,15 +6,14 @@ public class AgeAgain {
 
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
+
         System.out.println("What is your age?");
         int age = Integer.parseInt(myScanner.nextLine());
-
 
         if (age < 14) {
             System.out.println("What grade are you in?");
             String grade = myScanner.nextLine();
             System.out.println("Wow! " + grade + " grade - that sounds exciting!");
-
         } else if (age >= 14 && age <= 18) {
             System.out.println("Are you planning on going to college?");
             String colYN = myScanner.nextLine();

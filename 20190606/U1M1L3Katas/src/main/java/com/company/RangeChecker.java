@@ -17,7 +17,5 @@ public class RangeChecker {
         System.out.println(num);
 
 
-
-
     }
 }

@@ -6,6 +6,7 @@ public class IsJavaKeyword {
 
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
+
         System.out.println("Enter a word to see if it's a Java keyword!");
         String javaKey = myScanner.nextLine().toLowerCase();
 
