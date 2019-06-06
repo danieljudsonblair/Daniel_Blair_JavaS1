@@ -63,7 +63,7 @@ public class HowManyTimesToSeven {
                 case 10:
                     ten++;
                     break;
-                case 11:20
+                case 11:
                     eleven++;
                     break;
                 case 12:
