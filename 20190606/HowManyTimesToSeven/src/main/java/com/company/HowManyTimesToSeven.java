@@ -8,10 +8,6 @@ public class HowManyTimesToSeven {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
         Random rand = new Random();
-        System.out.println("Enter the number of rolls:");
-
-        int rolls = Integer.parseInt(myScanner.nextLine());
-
         short max = 6;
         short min = 1;
         short two = 0;
@@ -27,9 +23,10 @@ public class HowManyTimesToSeven {
         short twelve = 0;
         boolean sevenRoll = false;
 
+        System.out.println("Enter the number of rolls:");
+        int rolls = Integer.parseInt(myScanner.nextLine());
 
         for (int i = 1; i <= rolls; i++) {
-
             int random = (rand.nextInt((max - min) + 1) + min) + (rand.nextInt((max - min) + 1) + min);
             switch (random) {
                 case 2:

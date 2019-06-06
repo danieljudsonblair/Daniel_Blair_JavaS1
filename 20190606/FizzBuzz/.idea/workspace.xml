@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb8775e6-a5a5-43be-8e4e-915ee0818f61" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/FizzBuzz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HiLo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HiLo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HiLo/src/main/java/com/company/HiLo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HiLo/src/main/java/com/company/HiLo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HowManyTimesToSeven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HowManyTimesToSeven/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LoanCalculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LoanCalculator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LoanCalculator/src/main/java/com/company/LoanCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LoanCalculator/src/main/java/com/company/LoanCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrimeFinder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimeFinder/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrimeFinder/src/main/java/com/company/PrimeFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimeFinder/src/main/java/com/company/PrimeFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/AgeAgain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/AgeAgain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/CountByThirteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/CountByThirteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/CountByTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/CountByTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/CountTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/CountTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/EvenOrOdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/EvenOrOdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/FavoriteProgrammingLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/FavoriteProgrammingLanguage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/IsJavaKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/IsJavaKeyword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/RangeChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/RangeChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/UltimateQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/UltimateQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/YourAgeCan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L3Katas/src/main/java/com/company/YourAgeCan.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -211,7 +193,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32866043" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
