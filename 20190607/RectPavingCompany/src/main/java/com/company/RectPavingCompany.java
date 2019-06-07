@@ -17,14 +17,14 @@ public class RectPavingCompany {
         System.out.print("What is the length of the driveway in feet? ");
         float length = Float.parseFloat(scan.nextLine());          // Changed type to float and use parseFloat method
 
-        float cementCost = 0.0f;
-        float framingCost = 0.0f;
+//        float cementCost = 0.0f;    <- removed to be declared and initialized below
+//        float framingCost = 0.0f;   <- removed to be declared and initialized below
 
         System.out.print("What is the cost of cement per square foot? ");
-        cementCost = Float.parseFloat(scan.nextLine());
+        float cementCost = Float.parseFloat(scan.nextLine());      // added type to variable declaration and calculation
 
         System.out.print("What is the cost of framing/footers per linear foot? ");
-        framingCost = Float.parseFloat(scan.nextLine());           //  Changed cementCost to framingCost
+        float framingCost = Float.parseFloat(scan.nextLine());           //  Changed cementCost to framingCost; added type to variable declaration and calculation
 
         float area = length * width;                               // Changed to type float
         float perimeter = 2 * length + 2 * width;                  // Changed to type float, changed operator from - to +
