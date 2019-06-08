@@ -6,9 +6,8 @@ public class App {
 
     public static int total(int[] arr) {
         int total = 0;
-        for (int i = 0; i < arr.length; i++) {
-            total = total + arr[i];
-
+        for (int i : arr) {
+            total = total + i;
         }
         return total;
     }
@@ -16,10 +15,8 @@ public class App {
 
     public static int totalOdd(int[] arr) {
         int total = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (i % 2 == 1) {
-                total = total + arr[i];
-            }
+        for (int i = 1; i < arr.length; i+= 2) {
+            total = total + arr[i];
         }
         return total;
     }
@@ -27,10 +24,8 @@ public class App {
 
     public static int totalEven(int[] arr) {
         int total = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (i % 2 == 0) {
+        for (int i = 0; i < arr.length; i+= 2) {
                 total = total + arr[i];
-            }
         }
         return total;
     }
@@ -40,12 +35,12 @@ public class App {
         int first = arr[0];
         int second = arr[1];
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > first) {
+        for (int i : arr) {
+            if (i > first) {
                 second = first;
-                first = arr[i];
-            } else if (arr[i] < first && arr[i] > second) {
-                second = arr[i];
+                first = i;
+            } else if (i < first && i > second) {
+                second = i;
             }
         }
         return second;
@@ -70,9 +65,9 @@ public class App {
 
 
     public static String concatenateString(String[] arr) {
-        String str = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            str = str + arr[i];
+        String str = "";
+        for (String i : arr) {
+            str = str + i;
         }
         return str;
     }
@@ -94,16 +89,16 @@ public class App {
     public static int[] lessThanFive(int[] arr) {
         int ctr = 0;
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < 5) {
+        for (int i : arr) {
+            if (i < 5) {
                 ctr++;
             }
         }
         if (ctr > 0) {
             int[] arr2 = new int[ctr];
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] < 5) {
-                    arr2[arr2.length - ctr] = arr[i];
+            for (int i : arr) {
+                if (i < 5) {
+                    arr2[arr2.length - ctr] = i;
                     ctr--;
                 }
             }
@@ -117,8 +112,8 @@ public class App {
     public static int[][] splitAtFive(int[] arr) {
         int less = 0;
         int more = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < 5) {
+        for (int i : arr) {
+            if (i < 5) {
                 less++;
             } else {
                 more++;
@@ -128,12 +123,12 @@ public class App {
         arr2[0] = new int[less];
         arr2[1] = new int[more];
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < 5) {
-                arr2[0][arr2[0].length - less] = arr[i];
+        for (int i : arr) {
+            if (i < 5) {
+                arr2[0][arr2[0].length - less] = i;
                 less--;
             } else {
-                arr2[1][arr2[1].length - more] = arr[i];
+                arr2[1][arr2[1].length - more] = i;
                 more--;
             }
         }
