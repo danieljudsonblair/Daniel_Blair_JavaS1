@@ -54,8 +54,7 @@ public class App {
     }
 
     public static String[] swapFirstAndLast(String[] arr) {
-        String holder;
-        holder = arr[0];
+        String holder = arr[0];
         arr[0] = arr[arr.length - 1];
         arr[arr.length - 1] = holder;
         return arr;
@@ -73,7 +72,6 @@ public class App {
         int[] arr2 = new int[arr.length / 3];
         if (arr.length < 3) {
             return null;
-
         } else {
             for (int i = 0; i < arr2.length; i++) {
                 arr2[i] = arr[3 * i + 2];
@@ -158,10 +156,8 @@ public class App {
     }
 
     public static void main(String[] args) {
-        int totalArr[] = {1, 2, 3, 4, 5, 6};
-        System.out.println(total(totalArr));
-        System.out.println(totalOdd(totalArr));
-        System.out.println(secondLargestNumber(totalArr));
+        int arr[] = {-17, -3};
+        System.out.println(secondLargestNumber(arr));
     }
 }
 
