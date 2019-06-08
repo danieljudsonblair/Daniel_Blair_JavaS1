@@ -7,7 +7,7 @@ public class App {
     public static int total(int[] arr) {
         int total = 0;
         for (int i : arr) {
-            total = total + i;
+            total += i;
         }
         return total;
     }
@@ -16,7 +16,7 @@ public class App {
     public static int totalOdd(int[] arr) {
         int total = 0;
         for (int i = 1; i < arr.length; i+= 2) {
-            total = total + arr[i];
+            total += arr[i];
         }
         return total;
     }
@@ -25,7 +25,7 @@ public class App {
     public static int totalEven(int[] arr) {
         int total = 0;
         for (int i = 0; i < arr.length; i+= 2) {
-                total = total + arr[i];
+                total += arr[i];
         }
         return total;
     }
@@ -67,7 +67,7 @@ public class App {
     public static String concatenateString(String[] arr) {
         String str = "";
         for (String i : arr) {
-            str = str + i;
+            str += i;
         }
         return str;
     }
