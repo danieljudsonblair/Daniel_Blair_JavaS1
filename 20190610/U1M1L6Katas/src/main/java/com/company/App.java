@@ -15,7 +15,7 @@ public class App {
 
     public static int totalOdd(int[] arr) {
         int total = 0;
-        for (int i = 1; i < arr.length; i+= 2) {
+        for (int i = 1; i < arr.length; i += 2) {
             total += arr[i];
         }
         return total;
@@ -24,8 +24,8 @@ public class App {
 
     public static int totalEven(int[] arr) {
         int total = 0;
-        for (int i = 0; i < arr.length; i+= 2) {
-                total += arr[i];
+        for (int i = 0; i < arr.length; i += 2) {
+            total += arr[i];
         }
         return total;
     }
@@ -119,7 +119,7 @@ public class App {
                 more++;
             }
         }
-        int arr2[][] = new int[2][];
+        int[][] arr2 = new int[2][];
         arr2[0] = new int[less];
         arr2[1] = new int[more];
 
@@ -146,7 +146,7 @@ public class App {
                 odds++;
             }
         }
-        String arr2[][] = new String[2][];
+        String[][] arr2 = new String[2][];
         arr2[0] = new String[evens];
         arr2[1] = new String[odds];
 
@@ -164,7 +164,7 @@ public class App {
 
 
     public static void main(String[] args) {
-        int[] arr = {0,1,2,3,4,5,6,7};
+        int[] arr = {0, 1, 2, 3, 4, 5, 6, 7};
         String[] strArr = {"foo", "bar", "baz", "qux"};
         System.out.println(total(arr));
         System.out.println(totalOdd(arr));

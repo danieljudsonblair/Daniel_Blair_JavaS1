@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="U1-M1-Summative-Blair-Daniel" />
+        <module name="u1m1summative" />
       </profile>
     </annotationProcessing>
   </component>

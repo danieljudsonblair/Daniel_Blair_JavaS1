@@ -7,7 +7,7 @@ public class ArrayFun5Words {
         Scanner myScanner = new Scanner(System.in);
 
         int ctr = 0;
-        String [] arr = new String [5];
+        String[] arr = new String[5];
 
         while (ctr < 5) {
             System.out.println("Enter a word:");
