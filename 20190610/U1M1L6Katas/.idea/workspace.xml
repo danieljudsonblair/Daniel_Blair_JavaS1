@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28304f58-64b8-425c-bbd2-6c8cd3505207" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/src/main/java/com/company/ArrayFun5Words.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/src/main/java/com/company/ArrayFun5Words.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-309">
-              <caret line="120" selection-start-line="120" selection-end-line="120" />
+            <state relative-caret-position="120">
+              <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -49,11 +48,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="192" />
-    <option name="y" value="1" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1403" />
     <option name="width" value="1026" />
-    <option name="height" value="576" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -208,9 +206,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest - 2019.06.08 at 18h 20m 00s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest - 2019.06.08 at 18h 27m 54s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
@@ -238,10 +233,12 @@
     <history-entry file="AppTest - 2019.06.08 at 19h 04m 30s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest - 2019.06.08 at 19h 41m 29s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="192" y="1" width="1026" height="576" extended-state="1" />
-    <editor active="true" />
+    <frame x="1403" y="0" width="1026" height="1087" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1542443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -252,7 +249,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49896482" visible="true" weight="0.42663658" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49896482" visible="true" weight="0.1981132" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -293,8 +290,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-309">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        <state relative-caret-position="120">
+          <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -8,11 +8,11 @@ public class ValidNumber {
 
         boolean isValid = false;
 
-        System.out.println("Enter an integer 1-10");
+        System.out.println("Enter a number 1-10");
 
         while (!isValid) {
 
-            int num = Integer.parseInt(myScanner.nextLine());
+            float num = Float.parseFloat(myScanner.nextLine());
 
             if (num > 10 || num < 1) {
                 System.out.println("You must enter a number between 1 and 10, please try again");
