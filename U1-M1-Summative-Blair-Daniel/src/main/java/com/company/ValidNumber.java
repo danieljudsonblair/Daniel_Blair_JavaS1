@@ -13,7 +13,6 @@ public class ValidNumber {
         while (!isValid) {
 
             float num = Float.parseFloat(myScanner.nextLine());
-
             if (num > 10 || num < 1) {
                 System.out.println("You must enter a number between 1 and 10, please try again");
             } else {

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="28304f58-64b8-425c-bbd2-6c8cd3505207" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/src/main/java/com/company/ArrayFunReverseIt.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/src/main/java/com/company/ArrayFunReverseIt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/src/main/java/com/company/ValidNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/src/main/java/com/company/ValidNumber.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,10 +50,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1403" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="14" />
     <option name="width" value="1026" />
-    <option name="height" value="1087" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -238,7 +240,8 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1403" y="0" width="1026" height="1087" extended-state="0" />
+    <frame x="14" y="0" width="1026" height="775" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1542443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -249,7 +252,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49896482" visible="true" weight="0.1981132" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49896482" visible="true" weight="0.29439253" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
