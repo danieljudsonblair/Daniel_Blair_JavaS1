@@ -4,10 +4,6 @@
     <list default="true" id="ac85b2bc-8b7d-404b-bef8-f90cb6ae48d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../20190606/HowManyTimesToSeven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190606/HowManyTimesToSeven/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../20190610/U1M1L6Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190610/U1M1L6Katas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/ALittleQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/ALittleQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/ANumberGuessingGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/ANumberGuessingGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/HighLowWithLimitedTries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/HighLowWithLimitedTries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/SpaceBoxing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/SpaceBoxing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/SpaceBoxing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="85">
+              <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -157,7 +153,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="351" />
     <option name="width" value="1026" />
     <option name="height" value="775" />
@@ -317,7 +313,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="351" y="0" width="1026" height="775" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25465837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -422,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/SpaceBoxing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
         </state>
       </provider>
     </entry>
