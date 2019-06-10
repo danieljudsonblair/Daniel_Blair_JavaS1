@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class ALittleQuiz {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
-        System.out.println("Are you ready for a quiz?");
-        String ready = myScanner.nextLine();
+        System.out.print("Are you ready for a quiz? ");
+        String ready = myScanner.next();
         System.out.println("Okay, here it comes!");
         System.out.println("                    ");
         System.out.println("Q1) What is the capital of North Carolina?");

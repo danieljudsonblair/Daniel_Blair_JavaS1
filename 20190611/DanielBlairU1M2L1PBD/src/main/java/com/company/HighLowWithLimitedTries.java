@@ -18,12 +18,12 @@ public class HighLowWithLimitedTries {
         while (ctr <= 7 && guess != random) {
             if (guess < random) {
                 System.out.println("Sorry, you are too low.");
-                System.out.print("Guess # " + ctr + ":");
+                System.out.print("Guess # " + ctr + ": ");
                 guess = myScanner.nextInt();
                 ctr++;
             } else if (guess > random) {
                 System.out.println("Sorry, that guess is too high.");
-                System.out.print("Guess # " + ctr + ":");
+                System.out.print("Guess # " + ctr + ": ");
                 guess = myScanner.nextInt();
                 ctr++;
             }

@@ -6,16 +6,16 @@ public class SpaceBoxing {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
 
-        System.out.println("Please enter your current earth weight: ");
-        int earthWeight = Integer.parseInt(myScanner.nextLine());
+        System.out.print("Please enter your current earth weight: ");
+        int earthWeight = myScanner.nextInt();
 
-        System.out.println("I have information for the following planets:");
+        System.out.println("\n" + "I have information for the following planets:");
         System.out.println("   1. Venus   2. Mars    3. Jupiter");
         System.out.println("   4. Saturn  5. Uranus  6. Neptune");
         System.out.println("                                   ");
-        System.out.println("Which planet are you visiting?");
+        System.out.print("Which planet are you visiting? ");
 
-        int planet = Integer.parseInt(myScanner.nextLine());
+        int planet = myScanner.nextInt();
         float weight;
         switch (planet) {
             case 1:
@@ -39,6 +39,6 @@ public class SpaceBoxing {
             default:
                 weight = earthWeight;
         }
-        System.out.printf("Your weight would be %.2f pounds on that planet", weight);
+        System.out.printf("\n" + "Your weight would be %.2f pounds on that planet.", weight);
     }
 }
