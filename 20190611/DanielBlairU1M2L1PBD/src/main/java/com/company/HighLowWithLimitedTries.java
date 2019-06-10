@@ -10,7 +10,6 @@ public class HighLowWithLimitedTries {
 
         int random = rand.nextInt((100 - 1) + 1) + 1;
         System.out.println("I'm thinking of a number between 1-100.  You have 7 guesses");
-        System.out.println(random);
         System.out.print("First guess: ");
         int guess = myScanner.nextInt();
 
