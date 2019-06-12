@@ -2,15 +2,15 @@ package com.company;
 
 
 public class Car {
-    String make;
-    String model;
-    String type;
-    String color;
-    String engine;
-    String transmission;
-    int numDoors;
-    double mpg;
-    int milesDriven;
+    private String make;
+    private String model;
+    private String type;
+    private String color;
+    private String engine;
+    private String transmission;
+    private int numDoors;
+    private double mpg;
+    private int milesDriven;
 
     public Car(String makeIn, String modelIn, String typeIn, String colorIn, String engineIn, String transmissionIn, int numDoorsIn, double mpgIn, int milesDrivenIn) {
         this.make = makeIn;
