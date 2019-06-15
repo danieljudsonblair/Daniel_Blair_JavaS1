@@ -9,8 +9,7 @@ public class Nim {
         int b = 4;
         int c = 5;
         boolean empty = false;
-        int howMany = 0;
-        String out;
+        int howMany;
         String player1;
         String player2;
         int turn = 0;
@@ -23,8 +22,7 @@ public class Nim {
         System.out.println();
 
         while (!empty) {
-            out = "A:: " + a + "    B:: " + b + "    C:: " + c;
-            System.out.println(out);
+            System.out.println("A:: " + a + "    B:: " + b + "    C:: " + c);
             System.out.println();
             if (turn % 2 == 0) {
                 player = player1;
@@ -47,16 +45,14 @@ public class Nim {
             if (a <= 0 && b <= 0 && c <= 0) {
                 System.out.println("A:: " + a + "    B:: " + b + "    C:: " + c);
                 empty = true;
-                if (player == player1) {
+                if (player.equals(player1)) {
                     player = player2;
-                } else if (player == player2) {
+                } else {
                     player = player1;
                 }
                 System.out.println();
                 System.out.println(player + ", there are no counters left, so you WIN!");
             }
         }
-
-
     }
 }
