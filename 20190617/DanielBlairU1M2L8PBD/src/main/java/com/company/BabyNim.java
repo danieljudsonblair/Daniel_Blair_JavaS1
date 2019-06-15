@@ -10,11 +10,9 @@ public class BabyNim {
         int c = 3;
         boolean empty = false;
         int howMany;
-        String out;
 
         while (!empty) {
-            out = "A:: " + a + "    B:: " + b + "    C:: " + c;
-            System.out.println(out);
+            System.out.println("A:: " + a + "    B:: " + b + "    C:: " + c);
             System.out.println();
             System.out.print("Choose a pile: ");
             String choice = myScanner.next().toUpperCase();
@@ -35,6 +33,5 @@ public class BabyNim {
         }
         System.out.println();
         System.out.println("All piles are empty. Good job!");
-
     }
 }
