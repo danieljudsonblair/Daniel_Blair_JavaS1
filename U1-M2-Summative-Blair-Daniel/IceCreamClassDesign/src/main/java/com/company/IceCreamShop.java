@@ -12,7 +12,7 @@ public class IceCreamShop {
     private float itemPrice;
     private float items;
 
-    private IceCreamShop(String flavorIn, int numScoopsIn, int numXtraToppinsIn, boolean isCupIn){
+    private IceCreamShop(String flavorIn, int numScoopsIn, int numXtraToppinsIn, boolean isCupIn) {
         this.flavor = flavorIn;
         this.numScoops = numScoopsIn;
         this.numExtraToppings = numXtraToppinsIn;
@@ -29,7 +29,7 @@ public class IceCreamShop {
         return itemPrice;
     }
 
-    private String printItem(String flavor, boolean isCup){
+    private String printItem(String flavor, boolean isCup) {
         String coneOrCup;
         if (isCup) {
             coneOrCup = "cup";
