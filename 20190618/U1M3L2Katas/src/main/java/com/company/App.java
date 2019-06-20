@@ -40,11 +40,11 @@ public class App {
         Map<String, List<Car>> map = new HashMap<>();
         for (Car item : car) {
             if (item.getMake().equals("Toyota")) {
-                toyotaList.add((Car) item);
+                toyotaList.add(item);
             } else if (item.getMake().equals("Ford")) {
-                fordList.add((Car) item);
+                fordList.add(item);
             } else if (item.getMake().equals("Honda")) {
-                hondaList.add((Car) item);
+                hondaList.add(item);
             }
         }
         map.put("Toyota", toyotaList);

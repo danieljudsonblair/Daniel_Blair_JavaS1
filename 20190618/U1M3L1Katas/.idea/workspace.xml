@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="719425e3-22f0-483a-8981-63ec31aff669" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U1M3L2Katas/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../20190617/DanielBlairU1M2L8PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190617/DanielBlairU1M2L8PBD/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/ClassmatesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/ClassmatesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/ClassmatesList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/ClassmatesList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/LinkedListApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/LinkedListApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1M3L2Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L2Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1M3L2Katas/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L2Katas/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1M3L2Katas/target/classes/com/company/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L2Katas/target/classes/com/company/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M1-Summative-Blair-Daniel/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -19,8 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -57,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Classmate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -66,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ClassmatesList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -105,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/company/ClassmatesListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
+            <state relative-caret-position="17">
               <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -155,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="349" />
     <option name="width" value="1026" />
     <option name="height" value="775" />
@@ -230,7 +229,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../U1M3L2Katas" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
@@ -344,12 +343,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SetIteratorTest - 2019.06.17 at 21h 46m 38s.xml">
-      <configuration name="SetIteratorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClassmatesListTest - 2019.06.18 at 00h 41m 56s.xml">
-      <configuration name="ClassmatesListTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ClassmatesListTest - 2019.06.18 at 00h 44m 49s.xml">
       <configuration name="ClassmatesListTest" configurationId="JUnit" />
     </history-entry>
@@ -374,11 +367,18 @@
     <history-entry file="ClassmatesListTest - 2019.06.18 at 01h 10m 56s.xml">
       <configuration name="ClassmatesListTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ClassmatesListTest - 2019.06.18 at 08h 01m 59s.xml">
+      <configuration name="ClassmatesListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClassmatesListTest - 2019.06.18 at 08h 03m 18s.xml">
+      <configuration name="ClassmatesListTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="349" y="0" width="1026" height="775" extended-state="1" />
+    <frame x="349" y="0" width="1026" height="775" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25465837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25465837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -387,7 +387,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32866043" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39719626" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -441,18 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/company/ClassmatesListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/company/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2295">
@@ -473,6 +461,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/company/ClassmatesListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Classmate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ClassmatesList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -483,13 +490,6 @@
             <element signature="e#321#322#0" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Classmate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
