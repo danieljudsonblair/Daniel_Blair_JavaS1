@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27435543-1e74-4e4c-91df-49c63e2bf7a7" name="Default Changelist" comment="" />
+    <list default="true" id="27435543-1e74-4e4c-91df-49c63e2bf7a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../20190613/DanielBlairU1M2L5PBD/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190613/DanielBlairU1M2L5PBD/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../20190613/DanielBlairU1M2L5PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190613/DanielBlairU1M2L5PBD/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../20190617/DanielBlairU1M2L8PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190617/DanielBlairU1M2L8PBD/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../20190618/U1M3L1Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190618/U1M3L1Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../20190618/U1M3L2Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190618/U1M3L2Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../20190618/U1M3L2Katas/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190618/U1M3L2Katas/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../20190618/U1M3L2Katas/target/classes/com/company/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190618/U1M3L2Katas/target/classes/com/company/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/TelevisionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/TelevisionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../U1-M1-Summative-Blair-Daniel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../U1-M1-Summative-Blair-Daniel/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,10 +55,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/TelevisionReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
-              <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+            <state relative-caret-position="569">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -56,6 +65,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -78,50 +90,15 @@
     <option name="width" value="1026" />
     <option name="height" value="775" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="television" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Television" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="television" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Television" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="television" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Television" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="television" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Television" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="television" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Television" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,8 +158,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18003026" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13388805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -238,18 +216,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout-to-restore>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/TelevisionReader.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -274,10 +240,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/TelevisionReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+        <state relative-caret-position="569">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>

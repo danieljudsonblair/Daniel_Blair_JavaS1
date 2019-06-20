@@ -68,7 +68,5 @@ public class TelevisionReader {
         } catch (IOException e) {
             System.out.println("ERROR: Problem encountered reading JSON file - " + e.getMessage());
         }
-
     }
-
 }
