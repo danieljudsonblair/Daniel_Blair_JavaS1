@@ -37,19 +37,29 @@ public class IceCreamFactory {
         System.out.printf("That's %.2f more batches \n", this.dailyTarget / this.lbsPerBatch);
     }
 
-    private void makeABatch(float lbsPerBatch) {
+    private void makeABatch() {
         System.out.println("Making a batch of " + this.flavor + " ice cream.");
-        this.dailyTarget = this.dailyTarget - lbsPerBatch;
+        this.dailyTarget = this.dailyTarget - this.lbsPerBatch;
     }
 
     public static void main(String[] args) {
         IceCreamFactory flavor1 = new IceCreamFactory("Strawberry", 10, 11.5f, 5, 90, 14);
+        IceCreamFactory flavor2 = new IceCreamFactory("Rocky Road", 15, 12.5f, 7.5f, 75, 11);
+
         flavor1.setDailyTarget(250f);
         flavor1.printRecipe();
         flavor1.printCurrentNeed();
-        flavor1.makeABatch(flavor1.lbsPerBatch);
+        flavor1.makeABatch();
         flavor1.printCurrentNeed();
-        flavor1.makeABatch(flavor1.lbsPerBatch);
+        flavor1.makeABatch();
         flavor1.printCurrentNeed();
+
+        flavor2.setDailyTarget(175f);
+        flavor2.printRecipe();
+        flavor2.printCurrentNeed();
+        flavor2.makeABatch();
+        flavor2.printCurrentNeed();
+        flavor2.makeABatch();
+        flavor2.printCurrentNeed();
     }
 }
