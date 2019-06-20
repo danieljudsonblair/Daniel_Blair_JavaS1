@@ -1,11 +1,3 @@
-/**
- *
- * Reads data from a JSON file using the Jackson Data Binding API and stores its contents in a list.
- * Prints the contents of the list.
- * @params args
- *
- */
-
 package com.company;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -21,6 +13,7 @@ import java.util.*;
 /*
     This kata was pair-programmed with Maria Wong as per instructed by Kesh.
  */
+
 public class TelevisionReader {
     public static void main(String[] args) {
         try {
@@ -28,8 +21,7 @@ public class TelevisionReader {
 
             List<Television> tvList;
 
-            tvList = mapper.readValue(new File("televisions.json"), new TypeReference<List<Television>>() {
-            });
+            tvList = mapper.readValue(new File("televisions.json"), new TypeReference<List<Television>>() {});
 
             //Find all televisions with a screen size greater than 60 inches. Use the `.forEach`
             // method to print out all entries.
