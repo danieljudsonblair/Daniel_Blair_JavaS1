@@ -42,7 +42,7 @@ public class Warrior extends Character {
     }
 
     protected void decreaseShieldStrength(Character attacker) {
-        shieldStrength -= attacker.attackPower / 2;
-        System.out.println("My shield strength has gone down by " + (attacker.attackPower / 2) + ".  My shield strength is now " + shieldStrength + ".");
+        shieldStrength -= attacker.attackPower;
+        System.out.println("My shield strength has gone down by " + (attacker.attackPower) + ".  My shield strength is now " + shieldStrength + ".");
     }
 }

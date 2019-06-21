@@ -42,7 +42,7 @@ public class Character {
     }
 
     void decreaseHealth(Character attacker) {
-        this.health -= attacker.attackPower + (100 / this.shieldStrength);
+        this.health = this.health - attacker.attackPower / (1 + this.shieldStrength / 33);
         System.out.println("I've been attacked by " + attacker.name +  ".  My health is now " + this.health + "!");
     }
 

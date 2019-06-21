@@ -58,4 +58,13 @@ public class Constable extends Character {
             System.out.println("I can't arrest you outside my jurisdiction!");
         }
     }
+
+    public static void main(String[] args) {
+        Constable constable = new Constable("Constable");
+        Farmer farmer = new Farmer("Farmer");
+        Warrior warrior = new Warrior("Warrior");
+        System.out.println(constable.health);
+        farmer.attack(constable);
+        farmer.attack(warrior);
+    }
 }
