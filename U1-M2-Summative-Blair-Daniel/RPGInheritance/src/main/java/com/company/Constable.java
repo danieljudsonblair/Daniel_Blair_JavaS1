@@ -19,7 +19,7 @@ public class Constable extends Character {
         System.out.println("My name is " + name + " and I am a Constable of " + jurisdiction + ".");
     }
 
-    protected void run() {
+    public void run() {
         super.run();
         runctr++;
         if (runctr % 10 > 5) {
@@ -29,27 +29,7 @@ public class Constable extends Character {
         }
     }
 
-    protected void attack(Character victim) {
-        super.attack(victim);
-    }
-
-    protected void heal(int healthPoints) {
-        super.heal(healthPoints);
-    }
-
-    protected void decreaseHealth(Character attacker) {
-        super.decreaseHealth(attacker);
-    }
-
-    protected void increaseStamina(int staminaIncrease) {
-        super.increaseStamina(staminaIncrease);
-    }
-
-    protected void decreaseStamina(int staminaDecrease) {
-        super.decreaseStamina(staminaDecrease);
-    }
-
-    protected void arrest() {
+    public void arrest() {
         if (jurisdiction.equals("this jurisdiction")) {
             System.out.println("You have the right to remain silent!");
             increaseStamina(5);
@@ -57,14 +37,5 @@ public class Constable extends Character {
         } else {
             System.out.println("I can't arrest you outside my jurisdiction!");
         }
-    }
-
-    public static void main(String[] args) {
-        Constable constable = new Constable("Constable");
-        Farmer farmer = new Farmer("Farmer");
-        Warrior warrior = new Warrior("Warrior");
-        System.out.println(constable.health);
-        farmer.attack(constable);
-        farmer.attack(warrior);
     }
 }

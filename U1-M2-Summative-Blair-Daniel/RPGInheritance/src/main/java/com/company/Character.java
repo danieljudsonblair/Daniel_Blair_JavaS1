@@ -17,20 +17,20 @@ public class Character {
 
     // speed decreases as a function of health
     // stamina decreases as a function of strength
-    void run() {
+    public void run() {
         System.out.println("I can run at speed " + this.speed / (100 / this.health) + ".");
         decreaseStamina((100 - this.strength) / 10);
     }
     // victim health decreases directly according to attacker's attackPower
     // attacker stamina decreases as a function of strength
 
-    void attack(Character victim) {
+    public void attack(Character victim) {
         System.out.println("I am attacking you, " + victim.name + " with power " + this.attackPower + ".");
         victim.decreaseHealth(this);
         this.decreaseStamina((100 - this.strength) / 5);
     }
 
-     void heal(int healthPointsIn){
+     public void heal(int healthPointsIn){
         System.out.println("My health just went up by " + healthPointsIn + " points!");
         if (100 - this.health >= healthPointsIn) {
             this.health += healthPointsIn;
@@ -41,12 +41,12 @@ public class Character {
         }
     }
 
-    void decreaseHealth(Character attacker) {
+    public void decreaseHealth(Character attacker) {
         this.health = this.health - attacker.attackPower / (1 + this.shieldStrength / 33);
         System.out.println("I've been attacked by " + attacker.name +  ".  My health is now " + this.health + "!");
     }
 
-    void increaseStamina(int staminaIncrease) {
+    public void increaseStamina(int staminaIncrease) {
         System.out.println("My stamina just went up by " + staminaIncrease + " points!");
         if (100 - this.stamina >= staminaIncrease) {
             this.stamina += staminaIncrease;
@@ -57,7 +57,7 @@ public class Character {
         }
     }
 
-    void decreaseStamina(int staminaDecrease) {
+    public void decreaseStamina(int staminaDecrease) {
         this.stamina -= staminaDecrease;
         System.out.println("My stamina just went down by " + staminaDecrease + " points!  My stamina is now " + this.stamina + ".");
     }
