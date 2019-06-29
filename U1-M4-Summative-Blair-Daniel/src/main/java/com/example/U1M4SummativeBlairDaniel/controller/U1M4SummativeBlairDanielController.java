@@ -18,10 +18,11 @@ public class U1M4SummativeBlairDanielController {
         Random rand = new Random();
 
         int num = rand.nextInt((9) + 1) + 1;
+
         switch (num) {
             case 1:
-                quote.setAuthor("Pee-Wee Herman");
-                quote.setQuote("There's a lot about me you don't understand.  Things you wouldn't understand, things you couldn't understand, things you SHOULDN'T understand.");
+                quote.setAuthor("Tom Cruise");
+                quote.setQuote("I am dangerous.");
                 return quote;
             case 2:
                 quote.setAuthor("Eugene Robinson");
@@ -37,7 +38,7 @@ public class U1M4SummativeBlairDanielController {
                 return quote;
             case 5:
                 quote.setAuthor("Maury Povich");
-                quote.setQuote("You are NOT the father.");
+                quote.setQuote("You are not the father.");
                 return quote;
             case 6:
                 quote.setAuthor("Daniel Blair");
@@ -49,11 +50,11 @@ public class U1M4SummativeBlairDanielController {
                 return quote;
             case 8:
                 quote.setAuthor("Matt Foley");
-                quote.setQuote("... and I live in a VAN DOWN BY THE RIVER.");
+                quote.setQuote("I live in a van down by the river.");
                 return quote;
             case 9:
                 quote.setAuthor("Neil Armstrong");
-                quote.setQuote("That's one small step for (a) man, one giant leap for mankind.");
+                quote.setQuote("That's one small step for man, one giant leap for mankind.");
                 return quote;
             case 10:
                 quote.setAuthor("Scott Manley");
@@ -71,6 +72,7 @@ public class U1M4SummativeBlairDanielController {
         Random rand = new Random();
 
         int num = rand.nextInt((9) + 1) + 1;
+
         switch (num) {
             case 1:
                 definition.setWord("brochette");
@@ -121,9 +123,9 @@ public class U1M4SummativeBlairDanielController {
     @ResponseStatus(value = HttpStatus.CREATED)
     public Answer postQuestion(@RequestBody Answer answerIn) {
         Answer answer = new Answer();
-        answer.setQuestion(answerIn.getQuestion());
         Random rand = new Random();
 
+        answer.setQuestion(answerIn.getQuestion());
         int num = rand.nextInt((5) + 1) + 1;
 
         switch (num) {
