@@ -121,11 +121,11 @@ public class U1M4SummativeBlairDanielController {
 
     @RequestMapping(value = "/magic", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Answer postQuestion(@RequestBody Answer answerIn) {
+    public Answer postQuestion(@RequestBody Answer questionIn) {
         Answer answer = new Answer();
         Random rand = new Random();
 
-        answer.setQuestion(answerIn.getQuestion());
+        answer.setQuestion(questionIn.getQuestion());
         int num = rand.nextInt((5) + 1) + 1;
 
         switch (num) {
