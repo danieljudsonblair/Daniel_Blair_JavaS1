@@ -29,7 +29,7 @@ paths:
                 $ref: '#/components/schemas/Definition'
   /magic:
     post:
-      summary: requests a user-defined question and returns a randomly-generated answer as json
+      summary: takes in a user-defined question as json in the request body, and returns a randomly-generated answer as json
       requestBody:
         required: true
         content:
