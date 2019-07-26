@@ -1,0 +1,774 @@
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: Game Store REST API - Daniel Blair U1 Capstone
+  description: Database-backed REST web service for a video game store.
+  
+servers: 
+  - url: http://localhost:8080
+    description: Local dev server
+    
+paths:
+  /games:
+    post:
+      summary: Create a new game
+      description: Adds a new game object to DB
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GamePost'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        
+    get:
+      summary: Get all games
+      description: Queries Database for list of all games
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+
+  /games/{id}:
+    get:
+      summary: Get game by id
+      description: Queries Database for game by id
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: Game id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+                
+    put:
+      summary: Update game by id
+      description: Updates game by id in path with properties (all optional) in request body
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Game id
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GameUpdate'
+      responses:
+        '204':
+          description: No Content
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+                
+    delete:
+      summary: Delete game by id
+      description: Deletes game by id in path
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Game id
+          schema:
+            type: string
+      responses:
+        '204':
+          description: No Content
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+        '422':
+          description: Unprocessable entity
+          content: 
+            application/json:
+              schema:
+                type: string
+                  
+  /games/studio/{studio}:
+    get:
+      summary: Get games by studio
+      description: Queries Database for list of games by studio
+      parameters: 
+        - name: studio
+          in: path
+          required: true
+          description: name of game studio
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+
+  /games/esrb/{esrb_rating}:
+    get:
+      summary: Get games by ESRB rating
+      description: Queries Database for list of games with given ESRB rating
+      parameters: 
+        - name: esrb_rating
+          in: path
+          required: true
+          description: ESRB rating of game
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+
+  /games/title/{title}:
+    get:
+      summary: Get games by title
+      description: Queries Database for list of games by title
+      parameters: 
+        - name: title
+          in: path
+          required: true
+          description: game title
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+
+  /consoles:
+    post:
+      summary: Create a new console
+      description: Adds a new console object to DB
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConsolePost'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConsoleResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+          
+    get:
+      summary: Get all consoles
+      description: Queries Database for list of all consoles
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+
+  /consoles/{id}:
+    get:
+      summary: Get console by id
+      description: Queries Database for console by id
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: Console id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConsoleResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+                
+    put:
+      summary: Update console by id
+      description: Updates console by id in path with properties (all optional) in request body
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Console id
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConsoleUpdate'
+      responses:
+        '204':
+          description: No Content
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+                
+    delete:
+      summary: Delete console by id
+      description: Deletes console by id in path
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Console id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: No Content
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+        '422':
+          description: Unprocessable entity
+          content:
+            application/json:
+              schema:
+                type: string
+                
+  /consoles/manufacturer/{manufacturer}:
+    get:
+      summary: Get consoles by manufacturer
+      description: Queries Database for list of consoles by manufacturer
+      parameters: 
+        - name: manufacturer
+          in: path
+          required: true
+          description: console manufacturer
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConsoleResponse'
+      
+  /tshirts:
+    post:
+      summary: Create a new t-shirt
+      description: Adds a new t-shirt object to DB
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TshirtPost'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TshirtResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+          
+    get:
+      summary: Get all t-shirts
+      description: Queries Database for list of all t-shirts
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+      
+  /tshirts/{id}:
+    get:
+      summary: Get t-shirt by id
+      description: Queries Database for t-shirt by id
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: T-shirt id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TshirtResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+                
+    put:
+      summary: Update t-shirt by id
+      description: Updates t-shirt by id in path with properties (all optional) in request body
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: T-shirt id
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TshirtUpdate'
+      responses:
+        '204':
+          description: No Content
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+    delete:
+      summary: Delete t-shirt by id
+      description: Deletes t-shirt by id in path
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Tshirt id
+          schema:
+            type: string
+      responses:
+        '204': 
+          description: No Content
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+                  
+  /tshirts/color/{color}:
+    get:
+      summary: Get t-shirts by color
+      description: Queries Database for list of t-shirts by color
+      parameters: 
+        - name: color
+          in: path
+          required: true
+          description: t-shirt color
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TshirtResponse'
+                
+  /tshirts/size/{size}:
+    get:
+      summary: Get tshirts by size
+      description: Queries Database for list of tshirts by size
+      parameters: 
+        - name: size
+          in: path
+          required: true
+          description: tshirt size
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TshirtResponse'
+                
+  /purchase:
+    post:
+      summary: Create a new purchase
+      description: Adds an invoice object to DB
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PurchasePost'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvoiceResponse'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+                
+  /invoices:
+    get:
+      summary: Get all invoices
+      description: Queries Database for list of all invoices
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvoiceResponse'
+                
+  /invoices/{id}:
+    get:
+      summary: Get invoice by id
+      description: Queries Database for invoice by id
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: Invoice id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvoiceResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+          
+components:
+  schemas:
+    PurchasePost:
+      type: object
+      properties:
+        name:
+          type: string
+        street:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        zipcode:
+          type: string
+        item_type:
+          type: string
+        item_id:
+          type: number
+        quantity:
+          type: number
+      required:
+        - name
+        - street
+        - city
+        - state
+        - zipcode
+        - item_type
+        - item_id
+        - quantity
+        
+    InvoiceResponse:
+      type: object
+      properties:
+        id:
+          type: number
+        name:
+          type: string
+        street:
+          type: string
+        city: 
+          type: string
+        state:
+          type: string
+        zipcode:
+          type: string
+        item_type:
+          type: string
+        item_id:
+          type: number
+        unit_price:
+          type: number
+        quantity:
+          type: number
+        subtotal:
+          type: number
+        tax:
+          type: number
+        processing_fee:
+          type: number
+        total:
+          type: number
+
+    GamePost:
+      type: object
+      properties:
+        title:
+          type: string
+        esrb_rating:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+        studio:
+          type: string
+        quantity:
+          type: number
+      required: 
+        - title
+        - esrb_rating
+        - description
+        - price
+        - studio
+        - quantity
+    
+    GameUpdate:
+      type: object
+      properties:
+        title:
+          type: string
+        esrb_rating:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+        studio:
+          type: string
+        quantity:
+          type: number
+    
+    GameResponse:
+      type: object
+      properties:
+        id:
+          type: number
+        title:
+          type: string
+        esrb_rating:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+        studio:
+          type: string
+        quantity:
+          type: number
+          
+    ConsolePost:
+      type: object
+      properties:
+        model:
+          type: string
+        manufacturer:
+          type: string
+        memory_amount:
+          type: string
+        processor:
+          type: string
+        price:
+          type: number
+        quantity:
+          type: number
+      required: 
+        - model
+        - manufacturer
+        - memory_amount
+        - processor
+        - price
+        - quantity
+    
+    ConsoleUpdate:
+      type: object
+      properties:
+        model:
+          type: string
+        manufacturer:
+          type: string
+        memory_amount:
+          type: string
+        processor:
+          type: string
+        price:
+          type: number
+        quantity:
+          type: number
+    
+    ConsoleResponse:
+      type: object
+      properties:
+        id:
+          type: number
+        model:
+          type: string
+        manufacturer:
+          type: string
+        memory_amount:
+          type: string
+        processor:
+          type: string
+        price:
+          type: number
+        quantity:
+          type: number
+
+    TshirtPost:
+      type: object
+      properties:
+        size:
+          type: string
+        color:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+        quantity:
+          type: number
+      required: 
+        - size
+        - color
+        - description
+        - price
+        - quantity
+    
+    TshirtUpdate:
+      type: object
+      properties:
+        size:
+          type: string
+        color:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+        quantity:
+          type: number
+    
+    TshirtResponse:
+      type: object
+      properties:
+        id:
+          type: number
+        size:
+          type: string
+        color:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+        quantity:
+          type: number

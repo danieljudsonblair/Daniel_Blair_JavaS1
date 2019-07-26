@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rpginheritance" />
+        <module name="customercomposition" />
+        <module name="converterinterface" />
+        <module name="icecreamclassdesign" />
+        <module name="calculateobject" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="calculateobject" target="1.8" />
+      <module name="converterinterface" target="1.8" />
+      <module name="customercomposition" target="1.8" />
+      <module name="icecreamclassdesign" target="1.8" />
+      <module name="rpginheritance" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
