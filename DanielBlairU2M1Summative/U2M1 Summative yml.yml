@@ -1,0 +1,31 @@
+/tasks/{id}:
+    get:
+      summary: Get task by id
+      description: Queries Database for task by id
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: Task id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+  
