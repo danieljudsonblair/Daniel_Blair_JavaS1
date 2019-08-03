@@ -1,4 +1,50 @@
-/tasks/{id}:
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: Tasker Service/Ad Service (U2M1 Summative)
+  description: Database-backed REST web microservice and Ad microservice for a task-tracking system.
+  
+servers: 
+  - url: http://localhost:8080
+    description: Local dev server
+    
+paths:
+  /tasks:
+    post:
+      summary: Create a new task
+      description: Adds a new task object to DB
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskPost'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        
+    get:
+      summary: Get all tasks
+      description: Queries Database for list of all tasks
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskResponse'
+
+  /tasks/{id}:
     get:
       summary: Get task by id
       description: Queries Database for task by id
@@ -28,4 +74,141 @@
             application/json:
               schema:
                 type: string
+                
+    put:
+      summary: Update task by id
+      description: Updates task by id in path with properties in request body (all optional)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Task id
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TaskUpdate'
+      responses:
+        '204':
+          description: No Content
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+                
+    delete:
+      summary: Delete task by id
+      description: Deletes task by id in path
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Task id
+          schema:
+            type: string
+      responses:
+        '204':
+          description: No Content
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+        '422':
+          description: Unprocessable entity
+          content: 
+            application/json:
+              schema:
+                type: string
+                  
+  /tasks/category{category}:
+    get:
+      summary: Get tasks by category
+      description: Queries Database for tasks by category
+      parameters: 
+        - name: category
+          in: path
+          required: true
+          description: Task category
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
   
+  
+components:
+  schemas:
+
+    TaskPost:
+      type: object
+      properties:
+        description:
+          type: string
+        createDate:
+          type: string
+        dueDate:
+          type: string
+        category:
+          type: string
+      required: 
+      - description
+      - createDate
+      - dueDate
+      - category
+    
+    TaskUpdate:
+      type: object
+      properties:
+        description:
+          type: string
+        createDate:
+          type: string
+        dueDate:
+          type: string
+        category:
+          type: string
+        
+    TaskResponse:
+      type: object
+      properties:
+        id:
+          type: number
+        description:
+          type: string
+        createDate:
+          type: string
+        dueDate:
+          type: string
+        category:
+          type: string
+        advertisement:
+          type: string
+          
