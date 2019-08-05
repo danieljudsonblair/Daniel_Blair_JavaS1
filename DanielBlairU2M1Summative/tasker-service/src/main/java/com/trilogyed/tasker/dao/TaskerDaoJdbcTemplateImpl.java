@@ -71,6 +71,7 @@ public class TaskerDaoJdbcTemplateImpl implements TaskerDao {
     }
 
     @Override
+    @Transactional
     public void updateTask(Task task) {
         jdbcTemplate.update(
                 UPDATE_TASK,
@@ -83,6 +84,7 @@ public class TaskerDaoJdbcTemplateImpl implements TaskerDao {
     }
 
     @Override
+    @Transactional
     public void deleteTask(int id) {
         jdbcTemplate.update(DELETE_TASK, id);
     }

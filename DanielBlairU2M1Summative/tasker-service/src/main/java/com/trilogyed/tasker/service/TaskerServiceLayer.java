@@ -69,7 +69,7 @@ public class TaskerServiceLayer {
         if (tvm.getDescription() != null)
             ut.setDescription(tvm.getDescription());
         if (tvm.getCreateDate() != null && tvm.getCreateDate().equals(""))
-            throw new IllegalArgumentException("create date must be empty");
+            throw new IllegalArgumentException("create date must not be empty");
         if (tvm.getCreateDate() != null)
             ut.setCreateDate(tvm.getCreateDate());
         if (tvm.getDueDate() != null && tvm.getDueDate().equals(""))
