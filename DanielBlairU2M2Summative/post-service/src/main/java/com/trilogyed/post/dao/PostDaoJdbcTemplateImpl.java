@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -33,6 +34,7 @@ public class PostDaoJdbcTemplateImpl implements PostDao {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    @Transactional
     @Override
     public Post add(Post post) {
         jdbcTemplate.update(
@@ -68,6 +70,7 @@ public class PostDaoJdbcTemplateImpl implements PostDao {
         return jdbcTemplate.query(SELECT_POSTS_BY_POSTER_NAME, this::mapRowToPost, poster_name);
     }
 
+    @Transactional
     @Override
     public void update(Post post) {
         jdbcTemplate.update(
@@ -79,6 +82,7 @@ public class PostDaoJdbcTemplateImpl implements PostDao {
         );
     }
 
+    @Transactional
     @Override
     public void delete(int post_id) {
         jdbcTemplate.update(DELETE_POST, post_id);

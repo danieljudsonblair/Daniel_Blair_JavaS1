@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -33,6 +34,7 @@ public class CommentDaoJdbcTemplateImpl implements CommentDao {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    @Transactional
     @Override
     public Comment add(Comment comment) {
         jdbcTemplate.update(
@@ -68,6 +70,7 @@ public class CommentDaoJdbcTemplateImpl implements CommentDao {
         return jdbcTemplate.query(SELECT_COMMENTS_BY_POST_ID, this::mapRowToComment, post_id);
     }
 
+    @Transactional
     @Override
     public void update(Comment comment) {
         jdbcTemplate.update(
@@ -80,6 +83,7 @@ public class CommentDaoJdbcTemplateImpl implements CommentDao {
         );
     }
 
+    @Transactional
     @Override
     public void delete(int id) {
         jdbcTemplate.update(DELETE_COMMENT, id);
