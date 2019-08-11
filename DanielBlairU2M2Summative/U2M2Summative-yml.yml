@@ -254,6 +254,7 @@ components:
       properties:
         postDate:
           type: string
+          description: YYYY-MM-DD
         posterName:
           type: string
         post:
@@ -276,6 +277,7 @@ components:
           type: number
         postDate:
           type: string
+          description: YYYY-MM-DD
         posterName:
           type: string
         post:
@@ -288,6 +290,7 @@ components:
           type: number
         postDate:
           type: string
+          description: YYYY-MM-DD
         posterName:
           type: string
         post:
@@ -307,6 +310,7 @@ components:
       properties:
         createDate:
           type: string
+          description: YYYY-MM-DD        
         commenterName:
           type: string
         comment:
@@ -325,6 +329,7 @@ components:
           type: number
         createDate:
           type: string
+          description: YYYY-MM-DD
         commenterName:
           type: string
         comment:
