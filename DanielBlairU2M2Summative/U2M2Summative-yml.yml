@@ -1,0 +1,337 @@
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: Stwitter Messaging Service (U2M2 Summative)
+  description: Database-backed REST web microservice that enables users to create and respond to messages.
+  
+servers: 
+  - url: http://localhost:8889
+    description: Local dev server
+    
+paths:
+  /posts:
+    post:
+      summary: Create a new post
+      description: Adds a new post object to DB
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostPost'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        
+  /posts/post/{id}:
+    get:
+      summary: Get post by id
+      description: Queries for post by id
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: Post id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostResponseWithCommentList'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+                
+    put:
+      summary: Update post by id
+      description: Updates post by id in path with property (post) in request body
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Post id
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostUpdate'
+      responses:
+        '204':
+          description: No Content
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+                
+    delete:
+      summary: Delete post by id
+      description: Deletes post by id in path
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Post id
+          schema:
+            type: string
+      responses:
+        '204':
+          description: No Content
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+        '422':
+          description: Unprocessable entity
+          content: 
+            application/json:
+              schema:
+                type: string
+                  
+  /posts/user/{poster_name}:
+    get:
+      summary: Get posts by user name
+      description: Queries for posts by user
+      parameters: 
+        - name: poster_name
+          in: path
+          required: true
+          description: Poster Name
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostArray'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+  
+  /posts/comments/post/{post_id}:
+    post:
+      summary: Create a new comment
+      description: Adds a new comment object to a post
+      parameters:
+        - name: post_id
+          in: path
+          required: true
+          description: Post Id
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CommentPost'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CommentResponse'
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+                
+  /posts/post/comment/{comment_id}:
+    put:
+      summary: Update comment by id
+      description: Updates comment by id in path with property (comment) in request body
+      parameters:
+        - name: comment_id
+          in: path
+          required: true
+          description: Comment id
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CommentUpdate'
+      responses:
+        '204':
+          description: No Content
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+    delete:
+      summary: Delete comment by id
+      description: Deletes comment by id in path
+      parameters:
+        - name: comment_id
+          in: path
+          required: true
+          description: Comment id
+          schema:
+            type: string
+      responses:
+        '204':
+          description: No Content
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: string
+        '422':
+          description: Unprocessable entity
+          content: 
+            application/json:
+              schema:
+                type: string
+      
+components:
+  schemas:
+
+    PostPost:
+      type: object
+      properties:
+        postDate:
+          type: string
+        posterName:
+          type: string
+        post:
+          type: string
+      required: 
+      - postDate
+      - posterName
+      - post
+    
+    PostUpdate:
+      type: object
+      properties:
+        post:
+          type: string
+        
+    PostResponse:
+      type: object
+      properties:
+        postID:
+          type: number
+        postDate:
+          type: string
+        posterName:
+          type: string
+        post:
+          type: string
+          
+    PostResponseWithCommentList:
+      type: object
+      properties:
+        postID:
+          type: number
+        postDate:
+          type: string
+        posterName:
+          type: string
+        post:
+          type: string
+        commentList:
+          type: array
+          items:
+            $ref: '#/components/schemas/CommentResponse'
+            
+    PostArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/PostResponseWithCommentList'
+          
+    CommentPost:
+      type: object
+      properties:
+        createDate:
+          type: string
+        commenterName:
+          type: string
+        comment:
+          type: string
+      required: 
+      - createDate
+      - commenterName
+      - comment
+    
+    CommentResponse:
+      type: object
+      properties:
+        commentId:
+          type: number
+        postId:
+          type: number
+        createDate:
+          type: string
+        commenterName:
+          type: string
+        comment:
+          type: string
+          
+    CommentUpdate:
+      type: object
+      properties:
+        post:
+          type: string
