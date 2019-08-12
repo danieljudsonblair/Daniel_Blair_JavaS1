@@ -20,9 +20,6 @@ public class StwitterController {
     @Autowired
     ServiceLayer service;
 
-    @Autowired
-    CommentServiceClient commentClient;
-
     @PostMapping("/posts")
     @ResponseStatus(HttpStatus.CREATED)
     public Post addPost(@RequestBody @Valid Post post) {

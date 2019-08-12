@@ -30,6 +30,10 @@ public class ServiceLayer {
         return "No " + item + " exists @ ID " + id;
     }
 
+    private String noProperty(String property) { return "You must supply a value for property: " + property; }
+
+    private String nonEmptyProperty(String property) { return "You must supply a non-empty value for " + property; }
+
     public Post savePost(Post post) {
 
         post.setPostID(postClient.createPost(post).getPostID());
@@ -59,11 +63,13 @@ public class ServiceLayer {
     }
 
     public void updatePost(PostViewModel pvm) {
+        if (pvm.getPost() == null)
+            throw new IllegalArgumentException(noProperty("post"));
+        if (pvm.getPost() != null && pvm.getPost().equals(""))
+            throw new IllegalArgumentException(nonEmptyProperty("post"));
         if (postClient.fetchPost(pvm.getPostID()) == null)
             throw new NotFoundException(noItem("post", pvm.getPostID()));
         Post up = postClient.fetchPost(pvm.getPostID());
-        if (pvm.getPost() != null && pvm.getPost().equals(""))
-            throw new IllegalArgumentException("You must supply a non-empty post");
         if (pvm.getPost() != null)
             up.setPost(pvm.getPost());
 
@@ -71,11 +77,13 @@ public class ServiceLayer {
     }
 
     public void updateComment(Comment comment) {
+        if (comment.getComment() == null)
+            throw new IllegalArgumentException(noProperty("comment"));
+        if (comment.getComment() != null && comment.getComment().equals(""))
+            throw new IllegalArgumentException(nonEmptyProperty("comment"));
         if (commentClient.fetchComment(comment.getCommentId()) == null)
             throw new NotFoundException(noItem("comment", comment.getCommentId()));
         Comment uc = commentClient.fetchComment(comment.getCommentId());
-        if (comment.getComment() != null && comment.getComment().equals(""))
-            throw new IllegalArgumentException("You must supply a non-empty comment");
         if (comment.getComment() != null)
             uc.setComment(comment.getComment());
 
