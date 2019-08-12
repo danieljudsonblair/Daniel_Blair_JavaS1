@@ -29,30 +29,22 @@ public class PostController {
     @Cacheable
     @GetMapping(value = "/{id}")
     public Post getPost(@PathVariable int id) {
-//        if (dao.get(id) == null)
-//            throw new NotFoundException("No post exists @ ID " + id);
         return dao.get(id);
     }
 
     @GetMapping
     public List<Post> getAllPosts() {
-//        if (dao.getAll().size() == 0)
-//            throw new NotFoundException("No posts exist");
         return dao.getAll();
     }
 
     @GetMapping(value = "/user/{poster_name}")
     public List<Post> getPostsByPosterName(@PathVariable String poster_name) {
-//        if (dao.getByPosterName(poster_name).size() == 0)
-//            throw new NotFoundException("No posts exist for poster " + poster_name);
         return dao.getByPosterName(poster_name);
     }
 
     @CacheEvict(key = "#post.getPostID()")
     @PutMapping(value = "/{id}")
     public void updatePost(@RequestBody Post post, @PathVariable int id) {
-//        if (dao.get(id) == null)
-//            throw new NotFoundException("Post does not exist @ ID " + id);
         post.setPostID(id);
         dao.update(post);
     }
@@ -60,8 +52,6 @@ public class PostController {
     @CacheEvict
     @DeleteMapping(value = "/{id}")
     public void deletePost(@PathVariable int id) {
-//        if (dao.get(id) == null)
-//            throw new NotFoundException("Post does not exist @ ID " + id);
         dao.delete(id);
     }
 }
