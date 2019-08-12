@@ -30,7 +30,7 @@ public class ServiceLayer {
         return "No " + item + " exists @ ID " + id;
     }
 
-    private String noProperty(String property) { return "You must supply a value for property: " + property; }
+    private String noProperty(String property) { return "You must supply a property: " + property; }
 
     private String nonEmptyProperty(String property) { return "You must supply a non-empty value for " + property; }
 
