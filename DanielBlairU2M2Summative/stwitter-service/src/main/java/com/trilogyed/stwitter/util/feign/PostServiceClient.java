@@ -20,7 +20,7 @@ public interface PostServiceClient {
     public Post createPost(@RequestBody Post post);
 
     @PutMapping(value = "/posts/{id}")
-    public void updatePost(@PathVariable int id, @RequestBody Post post);
+    public void updatePost(@RequestBody Post post);
 
     @DeleteMapping(value = "/posts/{id}")
     public void deletePost(@PathVariable int id);

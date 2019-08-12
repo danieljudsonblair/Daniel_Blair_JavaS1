@@ -42,15 +42,16 @@ public class ServiceLayer {
     }
 
     public String saveComment(Comment comment) {
+        if (postClient.fetchPost(comment.getPostId()) == null)
+            throw new IllegalArgumentException("Post ID in path must match an existing post");
         return producer.createComment(comment);
     }
 
     public PostViewModel fetchPost(int id) {
-        Post post = postClient.fetchPost(id);
-        if (post == null)
+        if (postClient.fetchPost(id) == null)
             throw new NotFoundException(noItem("post", id));
 
-        return postViewModelHelper(post);
+        return postViewModelHelper(postClient.fetchPost(id));
     }
 
     public List<PostViewModel> fetchPostsByPosterName(String poster_name) {
@@ -73,7 +74,7 @@ public class ServiceLayer {
         if (pvm.getPost() != null)
             up.setPost(pvm.getPost());
 
-        postClient.updatePost(up.getPostID(), up);
+        postClient.updatePost(up);
     }
 
     public void updateComment(Comment comment) {
@@ -87,7 +88,7 @@ public class ServiceLayer {
         if (comment.getComment() != null)
             uc.setComment(comment.getComment());
 
-        producer.updateComment(uc.getCommentId(), uc);
+        producer.updateComment(uc);
     }
 
     public void removePost(int id) {

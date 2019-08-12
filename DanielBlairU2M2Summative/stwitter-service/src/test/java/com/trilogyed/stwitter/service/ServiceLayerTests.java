@@ -43,7 +43,7 @@ public class ServiceLayerTests {
         comment.setComment("comment");
 
         doReturn(CommentProducer.SAVE_QUEUED_MSG).when(producer).createComment(comment);
-        doReturn(CommentProducer.UPDATE_QUEUED_MSG).when(producer).updateComment(1, comment);
+        doReturn(CommentProducer.UPDATE_QUEUED_MSG).when(producer).updateComment(comment);
     }
 
     public void setUpCommentServiceClientMock() {
@@ -85,7 +85,7 @@ public class ServiceLayerTests {
         doReturn(post).when(postClient).fetchPost(1);
         doReturn(postList).when(postClient).fetchPostByPosterName("name");
         doReturn(post).when(postClient).createPost(post1);
-        doNothing().when(postClient).updatePost(post.getPostID(), post);
+        doNothing().when(postClient).updatePost(post);
         doNothing().when(postClient).deletePost(1);
     }
 
@@ -148,7 +148,7 @@ public class ServiceLayerTests {
         service.updatePost(pvm);
 
         ArgumentCaptor<PostViewModel> pvmCaptor = ArgumentCaptor.forClass(PostViewModel.class);
-        verify(postClient).updatePost(pvm.getPostID(), pvmCaptor.capture());
+        verify(postClient).updatePost(pvmCaptor.capture());
         assertEquals(pvm.getPost(), pvmCaptor.getValue().getPost());
     }
 
@@ -161,7 +161,7 @@ public class ServiceLayerTests {
         service.updateComment(comment);
 
         ArgumentCaptor<Comment> commentCaptor = ArgumentCaptor.forClass(Comment.class);
-        verify(producer).updateComment(comment.getCommentId(), commentCaptor.capture());
+        verify(producer).updateComment(commentCaptor.capture());
         assertEquals(comment.getComment(), commentCaptor.getValue().getComment());
     }
 

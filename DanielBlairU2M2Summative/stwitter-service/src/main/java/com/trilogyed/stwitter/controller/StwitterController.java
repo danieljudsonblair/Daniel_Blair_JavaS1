@@ -39,8 +39,6 @@ public class StwitterController {
     @PostMapping(value = "/comments/post/{post_id}")
     @ResponseStatus(HttpStatus.CREATED)
     public void createComment(@PathVariable int post_id, @RequestBody @Valid Comment comment) {
-        if (service.fetchPost(post_id) == null)
-            throw new IllegalArgumentException("Post ID in path must match an existing post");
         comment.setPostId(post_id);
         service.saveComment(comment);
     }
