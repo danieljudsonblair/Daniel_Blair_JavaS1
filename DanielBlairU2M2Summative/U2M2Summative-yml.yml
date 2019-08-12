@@ -97,7 +97,7 @@ paths:
                 
     delete:
       summary: Delete post by id
-      description: Deletes post by id in path
+      description: Deletes post (and associated comments) by id in path
       parameters:
         - name: id
           in: path
