@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public interface CommentClient {
 
     @PostMapping
-    public Comment createComment(Comment comment);
+    public void createComment(Comment comment);
     @PutMapping(value = "/{id}")
     public void updateComment(@PathVariable int id, @RequestBody Comment comment);
 }
