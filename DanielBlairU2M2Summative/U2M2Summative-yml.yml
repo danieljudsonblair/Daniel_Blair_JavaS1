@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   version: 0.0.1
   title: Stwitter Messaging Service (U2M2 Summative)
-  description: Database-backed REST web microservice that enables users to create and respond to messages.
+  description: Database-backed REST web microservice that enables users to create/read/update/delete posts and comments.
   
 servers: 
   - url: http://localhost:8889
