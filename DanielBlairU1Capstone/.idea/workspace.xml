@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a339ac1-97ea-4812-a7ff-e745626066d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/U2M2Summative-cloud-config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/U2M2Summative-cloud-config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -431,6 +431,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19440243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

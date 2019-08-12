@@ -25,12 +25,12 @@ public class StwitterController {
         return service.savePost(post);
     }
 
-    @GetMapping(value = "posts/{id}")
+    @GetMapping(value = "/posts/{id}")
     public PostViewModel getPost(@PathVariable int id) {
         return service.fetchPost(id);
     }
 
-    @GetMapping(value = "posts/user/{poster_name}")
+    @GetMapping(value = "/posts/user/{poster_name}")
     public List<PostViewModel> getPostsByPosterName(@PathVariable String poster_name) {
         return service.fetchPostsByPosterName(poster_name);
     }
