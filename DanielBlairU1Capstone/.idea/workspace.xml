@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a339ac1-97ea-4812-a7ff-e745626066d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/service/CommentProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/service/CommentProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/PostServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/PostServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/U2M2Summative-cloud-config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/U2M2Summative-cloud-config-server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -125,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="170" />
     <option name="y" value="96" />
     <option name="width" value="1026" />
@@ -434,8 +430,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19440243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
