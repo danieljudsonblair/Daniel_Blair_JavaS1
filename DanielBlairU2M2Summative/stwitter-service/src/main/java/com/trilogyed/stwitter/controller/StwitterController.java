@@ -3,7 +3,6 @@ package com.trilogyed.stwitter.controller;
 import com.trilogyed.stwitter.model.Comment;
 import com.trilogyed.stwitter.model.Post;
 import com.trilogyed.stwitter.service.ServiceLayer;
-import com.trilogyed.stwitter.util.feign.CommentServiceClient;
 import com.trilogyed.stwitter.viewModel.PostViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
