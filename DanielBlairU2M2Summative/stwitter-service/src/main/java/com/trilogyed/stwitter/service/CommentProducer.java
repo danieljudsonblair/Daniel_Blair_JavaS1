@@ -29,12 +29,12 @@ public class CommentProducer {
         System.out.println("Sending comment...");
         rabbitTemplate.convertAndSend(EXCHANGE, ROUTING_KEY, msg);
         System.out.println("Comment Sent");
+
         return SAVE_QUEUED_MSG;
     }
 
     @PutMapping(value = "/comments/{comment_id}")
     public String updateComment(@RequestBody Comment comment) {
-
         Comment msg = new Comment(comment.getCommentId(), comment.getPostId(), comment.getCreateDate(), comment.getCommenterName(), comment.getComment());
         System.out.println("Sending comment...");
         rabbitTemplate.convertAndSend(EXCHANGE, ROUTING_KEY, msg);

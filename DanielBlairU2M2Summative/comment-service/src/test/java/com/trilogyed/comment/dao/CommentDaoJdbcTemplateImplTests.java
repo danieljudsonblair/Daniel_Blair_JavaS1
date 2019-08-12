@@ -48,6 +48,9 @@ public class CommentDaoJdbcTemplateImplTests {
         dao.delete(comment.getCommentId());
 
         assertNull(dao.get(comment.getCommentId()));
+
+        assertEquals(dao.getAll().size(), 0);
+        assertEquals(dao.getByPostId(1).size(), 0);
     }
 
     @Test
@@ -56,14 +59,14 @@ public class CommentDaoJdbcTemplateImplTests {
         comment.setPostId(1);
         comment.setCreateDate(LocalDate.of(2019,2,2));
         comment.setCommenterName("Name");
-        comment.setComment("comment your mother");
+        comment.setComment("comment");
 
         dao.add(comment);
 
         comment.setPostId(2);
         comment.setCreateDate(LocalDate.of(2018,2,2));
         comment.setCommenterName("Updated Name");
-        comment.setComment("update comment your mother");
+        comment.setComment("update comment");
 
         dao.update(comment);
 

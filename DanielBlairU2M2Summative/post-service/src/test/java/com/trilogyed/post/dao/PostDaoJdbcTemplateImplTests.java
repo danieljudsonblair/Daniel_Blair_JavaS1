@@ -44,6 +44,7 @@ public class PostDaoJdbcTemplateImplTests {
         assertEquals(dao.getAll().size(), 1);
 
         assertEquals(dao.getByPosterName("Name").size(), 1);
+        assertEquals(dao.getByPosterName("danimal").size(), 0);
 
         dao.delete(post.getPostID());
 
@@ -56,13 +57,13 @@ public class PostDaoJdbcTemplateImplTests {
         post.setPostID(1);
         post.setPostDate(LocalDate.of(2019,2,2));
         post.setPosterName("Name");
-        post.setPost("post your mother");
+        post.setPost("post");
 
         dao.add(post);
 
         post.setPostDate(LocalDate.of(2019,1,1));
         post.setPosterName("updated Name");
-        post.setPost("update post your mother");
+        post.setPost("updated post");
 
         dao.update(post);
 

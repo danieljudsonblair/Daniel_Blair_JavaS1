@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a339ac1-97ea-4812-a7ff-e745626066d8" name="Default Changelist" comment="" />
+    <list default="true" id="2a339ac1-97ea-4812-a7ff-e745626066d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/comment-service/src/test/java/com/trilogyed/comment/dao/CommentDaoJdbcTemplateImplTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/comment-service/src/test/java/com/trilogyed/comment/dao/CommentDaoJdbcTemplateImplTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/post-service/src/test/java/com/trilogyed/post/dao/PostDaoJdbcTemplateImplTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/post-service/src/test/java/com/trilogyed/post/dao/PostDaoJdbcTemplateImplTests.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -429,7 +432,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19440243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
