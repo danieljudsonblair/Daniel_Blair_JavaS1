@@ -15,7 +15,6 @@ import java.util.List;
 
 @RestController
 @RefreshScope
-@RequestMapping("/posts")
 public class StwitterController {
 
     @Autowired
@@ -24,18 +23,18 @@ public class StwitterController {
     @Autowired
     CommentServiceClient commentClient;
 
-    @PostMapping
+    @PostMapping("/posts")
     @ResponseStatus(HttpStatus.CREATED)
     public Post addPost(@RequestBody @Valid Post post) {
         return service.savePost(post);
     }
 
-    @GetMapping(value = "/post/{id}")
+    @GetMapping(value = "posts/{id}")
     public PostViewModel getPost(@PathVariable int id) {
         return service.fetchPost(id);
     }
 
-    @GetMapping(value = "/user/{poster_name}")
+    @GetMapping(value = "posts/user/{poster_name}")
     public List<PostViewModel> getPostsByPosterName(@PathVariable String poster_name) {
         return service.fetchPostsByPosterName(poster_name);
     }
@@ -49,28 +48,29 @@ public class StwitterController {
         service.saveComment(comment);
     }
 
-    @PutMapping(value = "/post/{post_id}")
+    @PutMapping(value = "/posts/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void updatePost(@PathVariable int post_id, @RequestBody PostViewModel pvm) {
-        pvm.setPostID(post_id);
+    public void updatePost(@PathVariable int id, @RequestBody PostViewModel pvm) {
+        pvm.setPostID(id);
         service.updatePost(pvm);
     }
 
-    @PutMapping(value = "/post/comment/{comment_id}")
+    @PutMapping(value = "/comments/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void updateComment(@PathVariable int comment_id, @RequestBody Comment comment) {
-        comment.setCommentId(comment_id);
+    public void updateComment(@PathVariable int id, @RequestBody Comment comment) {
+        comment.setCommentId(id);
         service.updateComment(comment);
     }
 
-    @DeleteMapping(value = "/post/{id}")
+    @DeleteMapping(value = "/posts/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deletePost(@PathVariable int id) {
         service.removePost(id);
     }
 
-    @DeleteMapping(value = "/post/comment/{comment_id}")
-    public void deleteComment(@PathVariable int comment_id) {
-        service.removeComment(comment_id);
+    @DeleteMapping(value = "/comments/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteComment(@PathVariable int id) {
+        service.removeComment(id);
     }
 }

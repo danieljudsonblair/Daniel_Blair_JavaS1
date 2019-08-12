@@ -7,15 +7,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @FeignClient(name = "comment-service")
-@RequestMapping("/comments")
 public interface CommentServiceClient {
 
-    @GetMapping(value = "/{id}")
-    public Comment fetchComment(@PathVariable int id);
+    @GetMapping(value = "/comments/{comment_id}")
+    public Comment fetchComment(@PathVariable int comment_id);
 
-    @GetMapping(value = "/post/{post_id}")
+    @GetMapping(value = "/comments/post/{post_id}")
     public List<Comment> fetchCommentsByPostId(@PathVariable int post_id);
 
-    @DeleteMapping(value = "/{id}")
-    public void deleteComment(@PathVariable int id);
+    @DeleteMapping(value = "/comments/{comment_id}")
+    public void deleteComment(@PathVariable int comment_id);
 }

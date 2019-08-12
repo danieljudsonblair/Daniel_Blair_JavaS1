@@ -33,7 +33,7 @@ paths:
               schema:
                 type: string
         
-  /posts/post/{id}:
+  /posts/{id}:
     get:
       summary: Get post by id
       description: Queries for post by id
@@ -120,7 +120,7 @@ paths:
             application/json:
               schema:
                 type: string
-                  
+                
   /posts/user/{poster_name}:
     get:
       summary: Get posts by user name
@@ -151,8 +151,8 @@ paths:
             application/json:
               schema:
                 type: string
-  
-  /posts/comments/post/{post_id}:
+                
+  /comments/post/{post_id}:
     post:
       summary: Create a new comment
       description: Adds a new comment object to a post
@@ -187,9 +187,9 @@ paths:
           content:
             application/json:
               schema:
-                type: string
-                
-  /posts/post/comment/{comment_id}:
+                type: string                
+
+  /comments/{comment_id}:
     put:
       summary: Update comment by id
       description: Updates comment by id in path with property (comment) in request body
@@ -220,6 +220,7 @@ paths:
             application/json:
               schema:
                 type: string
+                
     delete:
       summary: Delete comment by id
       description: Deletes comment by id in path
