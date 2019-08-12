@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a339ac1-97ea-4812-a7ff-e745626066d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/post-service/src/main/java/com/trilogyed/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/post-service/src/main/java/com/trilogyed/post/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/comment-queue-consumer/src/main/java/com/trilogyed/commentqueueconsumer/CommentQueueConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/comment-queue-consumer/src/main/java/com/trilogyed/commentqueueconsumer/CommentQueueConsumerApplication.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
