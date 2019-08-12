@@ -68,9 +68,11 @@ public class ServiceLayer {
             throw new IllegalArgumentException(noProperty("post"));
         if (pvm.getPost() != null && pvm.getPost().equals(""))
             throw new IllegalArgumentException(nonEmptyProperty("post"));
-        if (postClient.fetchPost(pvm.getPostID()) == null)
-            throw new NotFoundException(noItem("post", pvm.getPostID()));
+
         Post up = postClient.fetchPost(pvm.getPostID());
+
+        if (up == null)
+            throw new NotFoundException(noItem("post", pvm.getPostID()));
         if (pvm.getPost() != null)
             up.setPost(pvm.getPost());
 
@@ -82,9 +84,11 @@ public class ServiceLayer {
             throw new IllegalArgumentException(noProperty("comment"));
         if (comment.getComment() != null && comment.getComment().equals(""))
             throw new IllegalArgumentException(nonEmptyProperty("comment"));
-        if (commentClient.fetchComment(comment.getCommentId()) == null)
-            throw new NotFoundException(noItem("comment", comment.getCommentId()));
+
         Comment uc = commentClient.fetchComment(comment.getCommentId());
+
+        if (uc == null)
+            throw new NotFoundException(noItem("comment", comment.getCommentId()));
         if (comment.getComment() != null)
             uc.setComment(comment.getComment());
 
