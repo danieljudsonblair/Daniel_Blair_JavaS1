@@ -1,17 +1,18 @@
 package com.trilogyed.post.controller;
 
 import com.trilogyed.post.dao.PostDao;
-import com.trilogyed.post.exception.NotFoundException;
 import com.trilogyed.post.model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RefreshScope
 @RestController
 @RequestMapping("/posts")
 @CacheConfig(cacheNames = {"posts"})
