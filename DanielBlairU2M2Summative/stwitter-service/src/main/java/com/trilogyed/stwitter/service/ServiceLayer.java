@@ -26,13 +26,13 @@ public class ServiceLayer {
         this.postClient = postClient;
     }
 
-    private String noItem(String item, int id) {
+    private String printNoItem(String item, int id) {
         return "No " + item + " exists @ ID " + id;
     }
 
-    private String noProperty(String property) { return "You must supply a property: " + property; }
+    private String printNoProperty(String property) { return "You must supply a property: " + property; }
 
-    private String nonEmptyProperty(String property) { return "You must supply a non-empty value for " + property; }
+    private String printNonEmptyProperty(String property) { return "You must supply a non-empty value for " + property; }
 
     public Post savePost(Post post) {
 
@@ -49,7 +49,7 @@ public class ServiceLayer {
 
     public PostViewModel fetchPost(int id) {
         if (postClient.fetchPost(id) == null)
-            throw new NotFoundException(noItem("post", id));
+            throw new NotFoundException(printNoItem("post", id));
 
         return postViewModelHelper(postClient.fetchPost(id));
     }
@@ -65,14 +65,14 @@ public class ServiceLayer {
 
     public void updatePost(PostViewModel pvm) {
         if (pvm.getPost() == null)
-            throw new IllegalArgumentException(noProperty("post"));
+            throw new IllegalArgumentException(printNoProperty("post"));
         if (pvm.getPost() != null && pvm.getPost().equals(""))
-            throw new IllegalArgumentException(nonEmptyProperty("post"));
+            throw new IllegalArgumentException(printNonEmptyProperty("post"));
 
         Post up = postClient.fetchPost(pvm.getPostID());
 
         if (up == null)
-            throw new NotFoundException(noItem("post", pvm.getPostID()));
+            throw new NotFoundException(printNoItem("post", pvm.getPostID()));
         if (pvm.getPost() != null)
             up.setPost(pvm.getPost());
 
@@ -81,14 +81,14 @@ public class ServiceLayer {
 
     public void updateComment(Comment comment) {
         if (comment.getComment() == null)
-            throw new IllegalArgumentException(noProperty("comment"));
+            throw new IllegalArgumentException(printNoProperty("comment"));
         if (comment.getComment() != null && comment.getComment().equals(""))
-            throw new IllegalArgumentException(nonEmptyProperty("comment"));
+            throw new IllegalArgumentException(printNonEmptyProperty("comment"));
 
         Comment uc = commentClient.fetchComment(comment.getCommentId());
 
         if (uc == null)
-            throw new NotFoundException(noItem("comment", comment.getCommentId()));
+            throw new NotFoundException(printNoItem("comment", comment.getCommentId()));
         if (comment.getComment() != null)
             uc.setComment(comment.getComment());
 
@@ -97,7 +97,7 @@ public class ServiceLayer {
 
     public void removePost(int id) {
         if (postClient.fetchPost(id) == null)
-            throw new NotFoundException(noItem("post", id));
+            throw new NotFoundException(printNoItem("post", id));
 
         commentClient.fetchCommentsByPostId(id).stream().forEach(comment -> commentClient.deleteComment(comment.getCommentId()));
         postClient.deletePost(id);
@@ -105,7 +105,7 @@ public class ServiceLayer {
 
     public void removeComment(int id) {
         if (commentClient.fetchComment(id) == null)
-            throw new NotFoundException(noItem("comment", id));
+            throw new NotFoundException(printNoItem("comment", id));
 
         commentClient.deleteComment(id);
     }

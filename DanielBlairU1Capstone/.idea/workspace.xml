@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a339ac1-97ea-4812-a7ff-e745626066d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DanielBlairU2M2Summative/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" afterDir="false" />
-    </list>
+    <list default="true" id="2a339ac1-97ea-4812-a7ff-e745626066d8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
