@@ -30,9 +30,13 @@ public class ServiceLayer {
         return "No " + item + " exists @ ID " + id;
     }
 
-    private String printNoProperty(String property) { return "You must supply a property: " + property; }
+    private String printNoProperty(String property) {
+        return "You must supply a property: " + property;
+    }
 
-    private String printNonEmptyProperty(String property) { return "You must supply a non-empty value for " + property; }
+    private String printNonEmptyProperty(String property) {
+        return "You must supply a non-empty value for " + property;
+    }
 
     public Post savePost(Post post) {
 
