@@ -11,8 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.doReturn;
-import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.*;
 
 public class ServiceLayerTests {
     BankingClient client;
@@ -37,8 +36,12 @@ public class ServiceLayerTests {
         account1.setAccountNum("001");
         account1.setCredit(new BigDecimal("100.00"));
 
+        Account account2 = new Account();
+        account2.setAccountNum("002");
+        account2.setCredit(new BigDecimal("100.00"));
 
-
+        doThrow(new NotFoundException()).when(client).getAccount("002");
+        doReturn(account2).when(client).addToAccount(account2);
         doReturn(account).when(client).addToAccount(account);
         doReturn(account1).when(client).getAccount("001");
     }
@@ -59,5 +62,31 @@ public class ServiceLayerTests {
 
         AccountView fromService = service.saveAccount(account);
         assertEquals(fromService, av);
+    }
+
+    @Test
+    public void shouldCatchNotFoundExceptionAndSaveAccount() {
+        Account account = new Account();
+        account.setAccountNum("002");
+        account.setCredit(new BigDecimal("100.00"));
+
+        AccountView av = new AccountView();
+        av.setAccountNum("002");
+        av.setCredit(new BigDecimal("100.00"));
+        av.setBeginningBalance(new BigDecimal("0.00"));
+        av.setEndingBalance(new BigDecimal("100.00"));
+
+        AccountView fromService = service.saveAccount(account);
+        assertEquals(fromService, av);
+    }
+
+    class NotFoundException extends RuntimeException {
+
+        public NotFoundException() {
+        }
+
+        public NotFoundException(String message) {
+            super(message);
+        }
     }
 }

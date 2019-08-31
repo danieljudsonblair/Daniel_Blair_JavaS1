@@ -30,14 +30,15 @@ public class ServiceLayer {
             account = client.addToAccount(account);
             newAcct = true;
             av.setBeginningBalance(new BigDecimal("0.00"));
+            av.setEndingBalance(account.getCredit());
         }
         if (!newAcct) {
             account.setCredit(client.getAccount(account.getAccountNum()).getCredit().add(account.getCredit()));
             av.setBeginningBalance(client.getAccount(account.getAccountNum()).getCredit());
             client.addToAccount(account);
+            av.setEndingBalance(client.getAccount(account.getAccountNum()).getCredit());
         }
 
-        av.setEndingBalance(client.getAccount(account.getAccountNum()).getCredit());
         return av;
     }
 }
